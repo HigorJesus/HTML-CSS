@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+/* tudo que é  id em HTML vira # no CSS ( só pode um elemento )
+Tudo que é class em HTML vira . (ponto) em CSS p( pode vario elementos*/ 
+
+body{background-color: rgb(205, 255, 203);
+font-family: Arial, Helvetica, sans-serif;}
+
+h1{color: rgb(4, 109, 0);}
+
+h1#principal{text-align: center; background-color: green; color: white;}
+
+h2{color: rgb(73, 109, 71);}
+
+.basico{color: green;
+font-weight: bolder;
+
+
+.intermediario{color: rgb(162, 162, 31);
+font-weight:bolder;}
+
+.avançado{color: red;
+font-weight: bolder;}
+
+.destaque{background-color: rgb(175, 175, 53);
+}
