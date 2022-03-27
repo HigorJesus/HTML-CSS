@@ -1,4 +1,4 @@
 # html-css
  Estudos
  
- Estou aprendendo a criar sites e agora vou gerenciar meus reposi!
+ Estou aprendendo a criar sites e agora vou gerenciar meus repositórios!
