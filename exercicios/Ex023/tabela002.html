@@ -22,47 +22,77 @@
         padding:  10px;
     }
 
+    caption{
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgray;
+    }
+
     thead{
         background-color: gray;
         color: white;
     }
 
+    tbody > tr:nth-child(2n){
+        background-color: rgb(166, 16, 16);
+    }
+
+td{
+    text-align: right;
+}
 </style>
 <body>
     <h1>uso de tabelas grandes </h1>
     <!--anatomia pra tabelas grandes
     
     table
-      thead
+
+     caption = legenda
+
+      thead = cabeça
          tr, td, th
-        tbody 
+        tbody = corpo
         tr , td, th
-         tfoot
+         tfoot = rodapé
              tr, td, th-->
 
              <table>
+                 <caption>População das unidades federativas</caption>
                  <thead>
                      <tr>
-                     <th>Estado</th>
-                     <th>População</th>
+                     <th scope="col">Estado</th> <!-- TH = titulo -->
+                     <th scope="col">População</th><!-- titulo  th -->
                     </tr>
                  </thead>
                  <tbody>
                      <tr>
                          <td>São Paulo</td>
-                         <td>45 919 049</td>
+                         <td class="numero">45 919 049</td>
                          <tr>
                              <td>Minas Gerais</td>
-                             <td>21 168 791</td>
+                             <td class="numero">21 168 791</td>
                          </tr>
                          <tr>
                              <td>Rio de Janeiro</td>
-                             <td>17 264 943</td>
+                             <td class="numero">17 264 943</td>
+                         </tr>
+                         <tr>
+                             <td>Maranhão</td>
+                             <td class="numero">6 521 756</td>
+                         </tr>
+                         <tr>
+                             <td>Sergipe</td>
+                             <td class="numero">3 546 985</td>
+                         </tr>
+                         <tr>
+                             <td>Amazonas</td>
+                             <td class="numero">4 594 627</td>
                          </tr>
                      </tr>
                      <tfoot>
                          <tr>
-                             <th>Total de Habitantes</th>
+                             <th scope="row">Total de Habitantes</th>
                              <td>0000</td>
                          </tr>
                      </tfoot>
