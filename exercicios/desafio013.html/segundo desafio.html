@@ -15,7 +15,7 @@ table{
     text-align: center;
     width: 500px;
 }
-tr{
+th{
     border: 1px solid black;
     padding: 10px;
 }
@@ -25,29 +25,34 @@ tr{
 <table>
 
     <tr>
-        <th>a</th>
-        <th>b</th>
-        <th>c</th>
-        <th>d</th>
+        <th colspan="4">a</th>
+        <th rowspan="4">b</th>
     </tr>
 
     <tr>
+       
+        <th rowspan="5">c</th>
+        <th>d</th>
         <th>e</th>
         <th>f</th>
+       
+    </tr>
+
+    <tr>
         <th>g</th>
         <th>h</th>
-    </tr>
-
-    <tr>
         <th>i</th>
-        <th>j</th>
-        <th>k</th>
-        <th>l</th>
     </tr>
 
     <tr>
+        <th>j</th>
+        <th>l</th>
         <th>m</th>
-        <th>n</th>
+    </tr>
+    <tr>
+        <tr>
+            <th colspan="4">n</th>
+        </tr>
     </tr>
 
 </table>
