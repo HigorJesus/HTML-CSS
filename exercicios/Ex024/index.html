@@ -10,12 +10,21 @@
 <body>
 
     <form>
-        <div class="row">
+        <div class="div">
                 <fieldset>
                     <legend>caixas de texto</legend>
                         <div>
-                            <label for="txtnome">nome:</label>
-                            <input type="txt" name="nome" id="txtnome" placeholder="digite seu nome">
+                            <label for="txtnome" class="label">nome:</label>
+                            <input type="txt" name="nome" id="txtnome" placeholder="digite seu nome" minlength="4" maxlength="50" required autofocus class="input-texto">
+                        </div>
+                        <div class="div">
+                        <label for="e-mail" class="e-mail">e-mail:</label>
+                        <input type="email"  name="e-mail" id="e-mail" placeholder="digite seu e-mail" required  maxlength="50" class="label" >
+                        </div>
+
+                        <div class="div">
+                            <label for="celular">celular:</label>
+                            <input type="tel" id="celular" nome="celular" placeholder="digite seu numero de celular" maxlength="15" >
                         </div>
                 </fieldset>
         </div>
