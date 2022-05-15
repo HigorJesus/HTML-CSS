@@ -1,0 +1,29 @@
+fieldset{
+    display: inline-block;
+    width: 100%;
+}
+
+.checkbox{
+    color: red;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 6px 9px;
+    border: 1px solid rgb(92, 234, 97);
+    background-color: rgb(248, 244, 244);
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    outline: none;
+    
+}
+
+.check-carro{
+    color: rgb(31, 227, 10);
+    font-size: 14px;
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bolder;
+    padding-top: 10px
+}
+
+
+
