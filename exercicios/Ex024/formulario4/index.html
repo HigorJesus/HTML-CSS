@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+
+    function mostrarSenha(){
+            var txtsenha=document.getElementById("txtSenha");
+            if(txtsenha.type == "passoword"){
+                txtsenha.type = "text";
+            }else{
+        txtSenha.type ="password"
+    }
+    
+}
+
+    </script>
+</head>
+<body>
+
+    <div>
+        <fieldset>
+            <legend>senhas</legend>
+            <label for="txtsenha" class="label">senha</label>
+            <input type="password" id="txtsenha" name="senha" minlength="6" maxlength="10" placeholder="digite sua desenha" required class="caixa-texto">
+
+            <div class="div">
+                <label for="txtSenha">mostrar senha</label>
+                <input type="checkbox" id="mostrarSenha" onchange="mostrarSenha">
+
+            </div>
+        </fieldset>
+    </div>
+    
+</body>
+</html>
