@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+</head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima aliquid libero doloremque aliquam, odit omnis neque eligendi nostrum! Rerum nesciunt qui asperiores laudantium illo architecto iusto vero iste excepturi explicabo!Lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel enim accusantium dolorum inventore, consectetur repudiandae laudantium sed! Id vitae vero est amet, quaerat blanditiis sequi vel iure accusantium temporibus odio!</p>
+    
+    <ul>
+        <li><a href="paginas extras/pagina001.html"  target="freme">primeira página</a></li>
+        <li><a href="paginas extras/pagina002.html"  target="freme" >segunda página</a></li>
+        <li><a href="paginas extras/pagina003.html"  target="freme">terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur quibusdam accusantium amet, omnis minus voluptatum quisquam molestiae, adipisci nesciunt delectus sequi numquam maxime harum voluptates voluptas assumenda debitis repudiandae exercitationem.</p>
+
+    <iframe id="tela" name="freme" srcdoc="<h1> Escolha uma das opções acima</h1><p> escolha uma das três opões acima </p> <img src='imagens/favicon.ico'>" >
+        <p>Infelizmente seu navegador não é compatível com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis id assumenda cum, culpa impedit quisquam voluptates doloribus nesciunt expedita qui vitae molestias officiis ex velit voluptate labore rerum deserunt? Nostrum?</p>
+</body>
+</html>
