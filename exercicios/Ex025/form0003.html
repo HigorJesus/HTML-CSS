@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de formulário</title>
+</head>
+<body>
+
+<!-- O STEP de atributo especifica os intervalos de números permitidos para um elemento <input> . Exemplo: si step = "3 ", os números permitidos podem ser -3, 0, 3, 6, etc.O atributo step pode ser usado junto com os atributos max e min para criar um intervalo de valores permitidos -->
+
+
+
+    <h1>Teste de formulário</h1>
+
+    <form action="cadastro.php" autocomplete="on" method="get">
+
+        <p>
+            <label for="inome">Nome</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name" r>
+        </p>
+
+
+        <p><label for="imedia">média</label>
+        <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1" required value="9.5">
+
+        </p>        
+        <p><label for="imes">período letivo</label>
+        <input type="month" name="mes"  id="imes" value="2020-07" >
+        </p>
+
+        <p><label for="idia">dia da prova</label>
+        <input type="date" name="dia" id="idia" value="2022-08-01">
+        </p>
+
+
+        <p><label for="ihora">hora da prova</label>
+        <input type="time" name="hora" id="ihora" value="13:30">
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+        
+    </form>
+    
+</body>
+</html>
