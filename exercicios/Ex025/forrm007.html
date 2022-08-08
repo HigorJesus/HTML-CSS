@@ -7,33 +7,64 @@
     <title>formulário</title>
 </head>
 <body>
+
+    <!-- O elemento datalist , novo no HTML 5, mostra uma lista de elementos predefinidos como opção para um caixa de entrada de texto. Caso o browser não suporte este componente, ele pode exibir os elementos que compõem o datalist em forma de texto simples.
+        Para que funcione corretamente e necessário a tag option
+    
+                             <DATALIST>
+                                <OPTION>
+                                <OPTION>
+                            </DATALIST>    
+                        
+                        
+                        O elemento HTML <textarea>representa um controle de edição para uma caixa de texto, útil quando você permite ao usuário informar um texto extenso em formato livre, como um comentário ou formulário de retorno. Quando utilizado é recomendado usar o método post-->
+
+
     
     <h1>exemplo de formulário</h1>
-
+<form action="cadastro.php" method="post" autocomplete="on">
+    
+            <p>
+                <label for="iest">estados</label>
+            <select name="estado" id="iest">
+    
+                <optgroup label="região sudeste">
+                    <option value="sp">são paulo</option>
+                    <option value="mg">minas gerais</option>
+                    <option value="rj">rio de janeiro</option>
+                </optgroup>
+    
+                <optgroup label="região nordeste">
+                    <option value="bh" selected >bahia</option>
+                    <option value="al">alagoas</option>
+                    <option value="pe">pernambuco</option>
+                </optgroup>
+    
+            </select>
+            </p>
+    
+            <p>
+                <label for="iprof">profissão</label>
+                <input type="text" name="prof" id="iprof" list="lista de profissão">
+                <datalist id="lista de profissão">
+                    <option value="adm">administrador</option>
+                    <option value="cont">contador</option>
+                    <option value="dev">desenvolvedor</option>
+                </datalist>
+    
+            </p>
+    
+            <p>
+                <label for="img">mensagem</label>
+                <textarea name="mg" id="img" cols="30" rows="10"></textarea>
+            </p>
+    
+    
         <p>
-            <label for="iest">estados</label>
-        <select name="estado" id="iest">
-
-            <optgroup label="região sudeste"> 
-                <option value="sp">são paulo</option>
-                <option value="mg">minas gerais</option>
-                <option value="rj">rio de janeiro</option>
-            </optgroup>
-
-            <optgroup label="região nordeste">
-                <option value="bh" selected >bahia</option>
-                <option value="al">alagoas</option>
-                <option value="pe">pernambuco</option>
-            </optgroup>
-
-        </select> 
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
         </p>
-
-
-    <p>
-        <input type="submit" value="enviar">
-        <input type="reset" value="limpar">
-    </p>
+</form>
 
 </body>
 </html>
